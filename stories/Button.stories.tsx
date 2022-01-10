@@ -20,7 +20,7 @@ export default {
           <Title />
           <Description />
           <Primary />
-          <ArgsTable />
+          <ArgsTable story="^" />
         </>
       ),
     },
