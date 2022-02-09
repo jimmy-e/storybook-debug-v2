@@ -8,6 +8,8 @@ import {
 import { Meta, Story } from '@storybook/react/types-6-0';
 import { Button as ButtonComponent, ButtonProps } from './Button';
 
+export const Btn: Story<ButtonProps> = (args) => <ButtonComponent {...args} />;
+
 export default {
   argTypes: {
     backgroundColor: { control: 'color' },
@@ -19,8 +21,8 @@ export default {
         <>
           <Title />
           <Description />
-          <Primary />
-          <ArgsTable />
+          <Primary name="Btn"/>
+          <ArgsTable story="^" />
         </>
       ),
     },
