@@ -8,7 +8,7 @@ import {
 import { Meta, Story } from '@storybook/react/types-6-0';
 import { Button as ButtonComponent, ButtonProps } from './Button';
 
-export const Btn: Story<ButtonProps> = (args) => <ButtonComponent {...args} />;
+export const ButtonDocs: Story<ButtonProps> = (args) => <ButtonComponent {...args} />;
 
 export default {
   argTypes: {
@@ -21,7 +21,7 @@ export default {
         <>
           <Title />
           <Description />
-          <Primary name="Btn"/>
+          <Primary name="Button Docs"/>
           <ArgsTable story="^" />
         </>
       ),
@@ -30,7 +30,7 @@ export default {
   title: 'Example/Button',
 } as Meta;
 
-export const ButtonParentComponent: Story<ButtonProps> = (args) => (
+export const Button: Story<ButtonProps> = (args) => (
   <>
     <h1>hello world</h1>
     <ButtonComponent {...args} />
