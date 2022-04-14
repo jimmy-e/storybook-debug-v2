@@ -10,7 +10,7 @@ export const Title: Story<TitleProps> = (args) => {
   return (
     <>
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <a href="/?path=/story/title--title">LINK</a>
+        <a href="/?path=/story/title--title">CANVAS</a>
         <a href="/?path=/docs/title--title">DOCS</a>
       </div>
       <TitleComponent label="sample title" {...args} />
